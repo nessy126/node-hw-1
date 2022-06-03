@@ -1,0 +1,31 @@
+{
+  "name": "hw-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "commander": "^9.3.0",
+    "nanoid": "^3.3.4",
+    "yargs": "^17.5.1",
+    "yarn": "^1.22.18"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start:dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nessy126/node-hw-1.git"
+  },
+  "author": "Anastasiia Ivanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nessy126/node-hw-1/issues"
+  },
+  "homepage": "https://github.com/nessy126/node-hw-1#readme"
+}
