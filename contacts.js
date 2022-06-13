@@ -9,14 +9,14 @@ const updateContacts = async (contacts) => {
 }
 
 const listContacts = async () => {
-  console.log("listContacts");
+  // console.log("listContacts");
   const list = JSON.parse(await fs.readFile(contactsPath))
   return list;
 }
 
 const getContactById = async (contactId) => {
   const contacts = await listContacts()
-  const contact = contacts.find(contact => contact.id === contactId)
+  const contact = contacts.find(contact => Number(contact.id) === Number(contactId))
   if (!contact) {
     return null;
   }
@@ -25,7 +25,7 @@ const getContactById = async (contactId) => {
 
 const removeContact = async (contactId) => {
   const contacts = await listContacts()
-  const index = contacts.findIndex(contact => contact.id === contactId)
+  const index = contacts.findIndex(contact => Number(contact.id) === Number(contactId))
   if (index === -1) {
     return null;
   }
